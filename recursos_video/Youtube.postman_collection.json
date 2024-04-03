@@ -1,0 +1,235 @@
+{
+	"info": {
+		"_postman_id": "74c2a2b7-147d-4bc2-bb10-e536db608e26",
+		"name": "Youtube",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "5247692"
+	},
+	"item": [
+		{
+			"name": "jsonplaceholder",
+			"item": [
+				{
+					"name": "Getting a resource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://jsonplaceholder.typicode.com/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Listing all resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://jsonplaceholder.typicode.com/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "Creating a resource",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Nuevo Título de Post\",\r\n    \"body\": \"Cuerpo del post\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://jsonplaceholder.typicode.com/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating a resource",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 1,\r\n    \"title\": \"Actualizar con Put Título de Post\",\r\n    \"body\": \"Actualizar Cuerpo del post\",\r\n    \"userId\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://jsonplaceholder.typicode.com/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Patching a resource",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Actualizar con Patch Título de Post\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://jsonplaceholder.typicode.com/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting a resource",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "https://jsonplaceholder.typicode.com/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Filtering resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://jsonplaceholder.typicode.com/posts?userId=1",
+							"protocol": "https",
+							"host": [
+								"jsonplaceholder",
+								"typicode",
+								"com"
+							],
+							"path": [
+								"posts"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listing nested resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "https://jsonplaceholder.typicode.com/posts/1/comments"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "laravel",
+			"item": [
+				{
+					"name": "Getting a resource",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://consumirapiexternaenlaravel.test/api/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Listing all resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://consumirapiexternaenlaravel.test/api/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "Creating a resource",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Nuevo Título de Post\",\r\n    \"body\": \"Cuerpo del post\",\r\n    \"userId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://consumirapiexternaenlaravel.test/api/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "Updating a resource",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": 2,\r\n    \"id\": 1,\r\n    \"title\": \"titulo editado\",\r\n    \"body\": \"body editado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://consumirapiexternaenlaravel.test/api/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Patching a resource",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"body\": \"body editado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://consumirapiexternaenlaravel.test/api/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Deleting a resource",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": "http://consumirapiexternaenlaravel.test/api/posts/1"
+					},
+					"response": []
+				},
+				{
+					"name": "Filtering resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://consumirapiexternaenlaravel.test/api/users/2/posts"
+					},
+					"response": []
+				},
+				{
+					"name": "Listing nested resources",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://consumirapiexternaenlaravel.test/api/comments/posts/2"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
